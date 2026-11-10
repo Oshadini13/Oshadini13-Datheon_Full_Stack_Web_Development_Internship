@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About · Weather Telemetry</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="nav-root"></div>
+
+<main class="container">
+  <h1 class="page-title">About</h1>
+
+  <div class="card prose">
+    <h3>Real-Time Weather Forecast &amp; Climate Telemetry App</h3>
+    <p>A live weather dashboard. Search any city worldwide to get current temperature, conditions with dynamic icons, humidity, wind speed, atmospheric pressure and a 5-day forecast. Loading spinners and friendly errors handle slow networks and unknown cities.</p>
+
+    <h3>Tools used</h3>
+    <div class="tags">
+      <span class="tag">Fetch API</span>
+      <span class="tag">Async / Await</span>
+      <span class="tag">OpenWeatherMap API</span>
+      <span class="tag">CSS Flexbox</span>
+    </div>
+
+    <h3>Pages</h3>
+    <ul>
+      <li><b>Dashboard</b>: current weather metrics and the 5-day forecast cards.</li>
+      <li><b>Forecast</b>: tap a day for a 3-hour breakdown, plus a temperature trend chart.</li>
+      <li><b>Climate</b>: air quality index, pollutants and 5-day climate statistics.</li>
+      <li><b>Settings</b>: API key, units (metric / imperial) and search history.</li>
+    </ul>
+
+    <h3>Get started</h3>
+    <ol>
+      <li>Register for a free key at <a href="https://openweathermap.org/api" target="_blank" rel="noopener">OpenWeatherMap</a>.</li>
+      <li>Open <a href="settings.html">Settings</a>, paste the key, press Save.</li>
+      <li>Go to the <a href="index.html">Dashboard</a> and search for a city.</li>
+    </ol>
+
+    <h3>How the background changes</h3>
+    <p>The gradient follows the searched city's conditions: sunny, cloudy, rain, thunderstorm, snow and mist. After sunset or before sunrise <i>in that city</i> it switches to a night theme.</p>
+  </div>
+</main>
+
+<footer class="footer">Data from OpenWeatherMap · Weather Telemetry</footer>
+
+<script src="js/config.js"></script>
+<script src="js/ui.js"></script>
+<script>initPage('about.html');</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Live weather telemetry dashboard: current conditions and 5-day forecast for any city.">
+<title>Dashboard · Weather Telemetry</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="nav-root"></div>
+
+<main class="container">
+  <h1 class="page-title">Live Weather Dashboard</h1>
+
+  <form class="search" id="searchForm">
+    <input id="cityInput" type="text" placeholder="Search any city (e.g. Colombo, Tokyo, London)" autocomplete="off" required>
+    <button type="submit" id="searchBtn">Search</button>
+    <button type="button" id="geoBtn" class="icon-btn" title="Use my location" aria-label="Use my location">📍</button>
+  </form>
+  <div class="chips" id="recent"></div>
+
+  <div class="spinner hidden" id="spinner" role="status" aria-label="Loading"></div>
+  <div class="error hidden" id="error" role="alert"></div>
+  <div class="notice hidden" id="notice"></div>
+
+  <section id="result" class="hidden">
+    <div class="card current">
+      <div class="loc">
+        <h2 id="city"></h2>
+        <p id="localTime"></p>
+        <div class="desc" id="desc"></div>
+      </div>
+      <div class="temp-block">
+        <span id="iconWrap"></span>
+        <div class="temp" id="temp"></div>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><div class="label">Humidity</div><div class="value" id="humidity"></div></div>
+      <div class="metric"><div class="label">Wind speed</div><div class="value" id="wind"></div></div>
+      <div class="metric"><div class="label">Pressure</div><div class="value" id="pressure"></div></div>
+      <div class="metric"><div class="label">Feels like</div><div class="value" id="feels"></div></div>
+      <div class="metric"><div class="label">Visibility</div><div class="value" id="visibility"></div></div>
+      <div class="metric"><div class="label">Cloud cover</div><div class="value" id="clouds"></div></div>
+      <div class="metric"><div class="label">Sunrise</div><div class="value" id="sunrise"></div></div>
+      <div class="metric"><div class="label">Sunset</div><div class="value" id="sunset"></div></div>
+    </div>
+
+    <div class="card">
+      <h3>5-Day Forecast</h3>
+      <div class="forecast" id="forecast"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">Data from OpenWeatherMap · Weather Telemetry</footer>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

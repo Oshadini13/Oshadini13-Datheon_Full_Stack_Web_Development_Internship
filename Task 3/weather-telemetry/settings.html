@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings · Weather Telemetry</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="nav-root"></div>
+
+<main class="container">
+  <h1 class="page-title">Settings</h1>
+
+  <div class="card">
+    <div class="form-row">
+      <label for="apiKey">OpenWeatherMap API key</label>
+      <input id="apiKey" type="text" placeholder="Paste your API key" autocomplete="off" spellcheck="false">
+      <small>Free key: <a href="https://openweathermap.org/api" target="_blank" rel="noopener">openweathermap.org/api</a>. New keys can take up to 2 hours to activate. Type <b>demo</b> to try every page with sample data.</small>
+    </div>
+
+    <div class="form-row">
+      <label for="units">Units</label>
+      <select id="units">
+        <option value="metric">Metric (°C, km/h)</option>
+        <option value="imperial">Imperial (°F, mph)</option>
+      </select>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn" id="saveBtn" type="button">Save</button>
+      <button class="btn secondary" id="testBtn" type="button">Test key</button>
+      <button class="btn secondary" id="clearBtn" type="button">Clear search history</button>
+      <button class="btn secondary" id="resetBtn" type="button">Reset all</button>
+    </div>
+    <div class="msg" id="msg" role="status"></div>
+  </div>
+</main>
+
+<footer class="footer">Data from OpenWeatherMap · Weather Telemetry</footer>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>

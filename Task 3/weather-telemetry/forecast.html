@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forecast · Weather Telemetry</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="nav-root"></div>
+
+<main class="container">
+  <h1 class="page-title">5-Day Forecast</h1>
+
+  <form class="search" id="searchForm">
+    <input id="cityInput" type="text" placeholder="Search any city" autocomplete="off" required>
+    <button type="submit" id="searchBtn">Search</button>
+    <button type="button" id="geoBtn" class="icon-btn" title="Use my location" aria-label="Use my location">📍</button>
+  </form>
+  <div class="chips" id="recent"></div>
+
+  <div class="spinner hidden" id="spinner" role="status" aria-label="Loading"></div>
+  <div class="error hidden" id="error" role="alert"></div>
+  <div class="notice hidden" id="notice"></div>
+
+  <section id="result" class="hidden">
+    <div class="card place">
+      <h2 id="place"></h2>
+      <p id="placeSub"></p>
+    </div>
+
+    <div class="card">
+      <h3>Tap a day for the 3-hour breakdown</h3>
+      <div class="forecast selectable" id="forecast"></div>
+    </div>
+
+    <div class="card">
+      <h3 id="hourlyTitle"></h3>
+      <div class="hourly" id="hourly"></div>
+    </div>
+
+    <div class="card">
+      <h3>Temperature trend</h3>
+      <div class="chart" id="chart"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">Data from OpenWeatherMap · Weather Telemetry</footer>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/forecast.js"></script>
+</body>
+</html>
