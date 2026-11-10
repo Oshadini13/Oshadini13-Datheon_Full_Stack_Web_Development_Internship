@@ -2,7 +2,7 @@
 
 A responsive, dark-themed developer portfolio (black, blue and white) with a light theme toggle, smooth scrolling, a mobile hamburger menu and project modal popups. Plain HTML5, CSS3 and JavaScript (ES6), no build step.
 
-**Live site:** `https://YOUR-USERNAME.github.io/YOUR-REPO/` (replace after deploying)
+**Live site:** `(https://github.com/Oshadini13/Oshadini13-Datheon_Full_Stack_Web_Development_Internship.git)` 
 
 ## Features
 
@@ -47,7 +47,7 @@ python -m http.server 8000
    git push -u origin main
    ```
 3. In the repository go to **Settings → Pages**, set **Source** to **Deploy from a branch**, choose `main` and `/ (root)`, then save.
-4. After a minute the site is live at `https://YOUR-USERNAME.github.io/portfolio/`.
+4. After a minute the site is live at `(https://github.com/Oshadini13/Oshadini13-Datheon_Full_Stack_Web_Development_Internship.git)`.
 
 ### Deploy to Netlify or Vercel instead
 
