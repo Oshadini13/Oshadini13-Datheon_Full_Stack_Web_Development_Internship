@@ -6,7 +6,7 @@ A responsive, dark-themed developer portfolio (black, blue and white) with a lig
 
 ## Features
 
-- Semantic HTML5 structure: header, hero, about, experience, skills grid, featured projects, contact
+- Semantic HTML5 structure: header, hero, about, experience, skills grid, featured projects, contact 
 - Mobile-first layout using Flexbox and CSS Grid
 - Dark theme by default, light theme toggle (choice is remembered)
 - Smooth scrolling navigation with active-section highlighting
